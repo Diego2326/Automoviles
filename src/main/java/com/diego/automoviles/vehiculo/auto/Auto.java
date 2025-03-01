@@ -1,8 +1,9 @@
 package com.diego.automoviles.vehiculo.auto;
 
-import com.diego.automoviles.Automoviles;
 
-public class Auto extends Automoviles{
+import com.diego.automoviles.vehiculo.Vehiculo;
+
+public class Auto extends Vehiculo {
     private int cantidadPuertas;
 
     public int getCantidadPuertas() {
@@ -14,6 +15,11 @@ public class Auto extends Automoviles{
     }
     
     public void MostrarInfo(){
-        
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Modelo: " + getModelo());
+        System.out.println("Año: " + getAnio());
+        System.out.println("Velocidad " + getVelocidad());
+        System.out.println("Cantidad de puertas: " + getCantidadPuertas());
+
     }
 }

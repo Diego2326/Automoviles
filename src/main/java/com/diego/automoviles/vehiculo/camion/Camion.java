@@ -14,6 +14,10 @@ public class Camion extends Vehiculo{
     }
     
     public void MostrarInfo(){
-        
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Modelo: " + getModelo());
+        System.out.println("Año: " + getAnio());
+        System.out.println("Velocidad " + getVelocidad());
+        System.out.println("Capacidad de carga: " + getCapacidadCarga());
     }
 }

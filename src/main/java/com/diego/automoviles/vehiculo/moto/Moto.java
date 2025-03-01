@@ -2,17 +2,21 @@ package com.diego.automoviles.vehiculo.moto;
 import com.diego.automoviles.vehiculo.Vehiculo;
 
 public class Moto extends Vehiculo {
-    private String cantiadPuertas;
+    private String tipoManubrio;
 
-    public String getCantiadPuertas() {
-        return cantiadPuertas;
+    public String getTipoManubrio() {
+        return tipoManubrio;
     }
 
-    public void setCantiadPuertas(String cantiadPuertas) {
-        this.cantiadPuertas = cantiadPuertas;
+    public void setTipoManubrio(String tipoManubrio) {
+        this.tipoManubrio = tipoManubrio;
     }
     
     public void MostrarInfo(){
-        
+        System.out.println("Marca: " + getMarca());
+        System.out.println("Modelo: " + getModelo());
+        System.out.println("Año: " + getAnio());
+        System.out.println("Velocidad " + getVelocidad());
+        System.out.println("Tipo de manubrio: " + getTipoManubrio());
     }
 }
